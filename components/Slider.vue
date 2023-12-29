@@ -24,7 +24,7 @@
     <SwiperSlide v-for="i in 5">
       <div class="relative w-full carousel lg:h-[600px] md:h-60 sm:h-48 h-52">
         <img
-          src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg"
+          src="@/assets/images/slider.png"
           class="absolute block w-full h-full object-cover -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
           alt="..."
         />
