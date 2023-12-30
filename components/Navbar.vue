@@ -62,7 +62,7 @@
       </ul>
     </div>
 
-    <ul v-if="store.navbar" class="xl:hidden flex flex-col container md:py-16 sm:py-10 py-5 md:px-10 px-5 mx-auto overflow-hidden overflow-y-auto bg-white h-[calc(100vh_-_80px)] text-[40px] leading-normal gap-16 text-2xl">
+    <ul v-if="store.navbar" class="xl:hidden !pb-40 flex flex-col container md:py-16 sm:py-10 py-5 md:px-10 px-5 mx-auto overflow-hidden overflow-y-auto bg-white h-[calc(100vh_-_80px)] text-[40px] leading-normal gap-16 text-2xl">
       <li data-aos="fade-left">
         <router-link to="/"
           >Home

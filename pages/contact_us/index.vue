@@ -77,8 +77,6 @@
           </button>
         </form>
       </div>
-
-      <Footer />
     </section>
   </div>
 </template>

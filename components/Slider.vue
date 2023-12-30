@@ -1,6 +1,6 @@
 <template>
   <Swiper
-    class="rounded-[30px] overflow-hidden lg:mt-0 md:mt-5 sm:mt-10 mt-16"
+    class="rounded-[30px] overflow-hidden"
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
     :slides-per-view="1"
     :loop="true"
