@@ -1,23 +1,25 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  // app: {
-  //   head: {
-  //     title: "florify",
-  //     link: [
-  //       {
-  //         rel: "stylesheet",
-  //         href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css",
-  //       },
-  //       {
-  //         rel: "stylesheet",
-  //         href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
-  //       },
-  //     ],
-  //   },
-  // },
-  plugins: [
-    { src: '~/plugins/aos', mode: 'client', ssr: false }
-  ],
+  app: {
+    head: {
+      title: "Furniture",
+      link: [
+        {
+          rel: "icon",
+          href: "/icon.svg",
+        },
+        //   {
+        //     rel: "stylesheet",
+        //     href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css",
+        //   },
+        //   {
+        //     rel: "stylesheet",
+        //     href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css",
+        //   },
+      ],
+    },
+  },
+  plugins: [{ src: "~/plugins/aos", mode: "client", ssr: false }],
   imports: {
     autoImport: true,
   },
