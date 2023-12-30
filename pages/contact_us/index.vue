@@ -1,14 +1,14 @@
 <template>
   <div>
-    <section class="flex gap-16">
-      <img src="@/assets/images/contact_us.png" alt="" />
-      <div>
-        <h1 class="text-[100px] text-[#0157AC]">Contact Us</h1>
+    <section class="relative flex gap-16">
+      <img class="2xl:relative absolute -z-10" src="@/assets/images/contact_us.png" alt="" />
+      <div class="2xl:ml-0 xl:ml-16 lg:ml-20">
+        <h1 data-aos="fade-up" class="text-[100px] text-[#0157AC]">Contact Us</h1>
         <form class="mt-[100px]">
           <div class="flex gap-20">
             <div class="w-[400px] text-[32px] space-y-[100px]">
               <div class="relative">
-                <input
+                <input data-aos="fade-right"
                   type="text"
                   id="full_name"
                   class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-lg text-gray-900 border-0 border-b-[3px] border-black appearance-none focus:outline-none focus:ring-0 peer"
@@ -21,7 +21,7 @@
                 >
               </div>
               <div class="relative">
-                <input
+                <input data-aos="fade-right"
                   type="text"
                   id="phone"
                   class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-lg text-gray-900 border-0 border-b-[3px] border-black appearance-none focus:outline-none focus:ring-0 peer"
@@ -34,7 +34,7 @@
                 >
               </div>
               <div class="relative">
-                <input
+                <input data-aos="fade-right"
                   type="tel"
                   id="message"
                   class="block rounded-t-lg px-2.5 pb-2.5 pt-5 w-full text-lg text-gray-900 border-0 border-b-[3px] border-black appearance-none focus:outline-none focus:ring-0 peer"
@@ -49,17 +49,17 @@
             </div>
             <div>
               <ul class="space-y-[100px] -mt-10">
-                <li class="h-[65px]">
+                <li data-aos="fade-up" class="h-[65px]">
                   <h1 class="text-[#00054B] text-[32px] font-bold">Contact</h1>
                   <p class="text-[#00054B] text-[32px]">hi@green.com</p>
                 </li>
-                <li class="h-[65px]">
+                <li data-aos="fade-up" class="h-[65px]">
                   <h1 class="text-[#00054B] text-[32px] font-bold">Based in</h1>
                   <p class="text-[#00054B] text-[32px]">
                     New York, California, Ohio
                   </p>
                 </li>
-                <li class="h-[65px] pt-10">
+                <li data-aos="fade-up" class="h-[65px] pt-10">
                   <div class="flex items-center gap-2">
                     <img src="@/assets/svg/phone.svg" alt="" />
                     <img src="@/assets/svg/telegram.svg" alt="" />
@@ -70,13 +70,15 @@
               </ul>
             </div>
           </div>
-          <button
+          <button data-aos="fade-up"
             class="bg-[#027DFC] mt-[100px] rounded-full px-40 py-6 text-white text-[24px]"
           >
             Contact Us
           </button>
         </form>
       </div>
+
+      <Footer />
     </section>
   </div>
 </template>

@@ -1,10 +1,10 @@
 <template>
   <div>
     <section class="flex items-center justify-between">
-      <h1 class="text-[#0157AC] text-[32px] font-bold">Furnitures</h1>
+      <h1 class="text-[#0157AC] md:block hidden text-[32px] font-bold">Furnitures</h1>
       <div class="flex items-center justify-between gap-12">
         <div
-          class="flex items-center rounded-[10px] h-[46px] w-[350px] bg-[#F4F3F9]"
+          class="flex items-center rounded-[10px] h-[46px] sm:w-[350px] bg-[#F4F3F9]"
         >
           <input
             class="w-full h-full bg-transparent outline-none px-5 placeholder:black/30 text-sm"
@@ -22,7 +22,7 @@
       </div>
     </section>
     <section>
-      <ul class="flex items-center gap-8 mt-5 text-[24px] font-medium">
+      <ul class="flex items-center gap-8 md:mt-5 mt-3 md:text-[24px] sm:text-[20px] text-[16px] font-medium">
         <li class="flex items-center gap-2">
           <h1>Armchairs</h1>
           <p class="text-[#0157AC]">5</p>
@@ -36,12 +36,12 @@
           <p class="text-[#0157AC]">0</p>
         </li>
       </ul>
-      <ul class="my-5">
+      <ul class="md:my-5 my-3">
         <li>
           <button
-            class="flex items-center gap-3 h-8 px-4 rounded-full border border-[#0157AC] text-sm"
+            class="flex items-center gap-3 md:h-8 h-6 px-4 rounded-full border border-[#0157AC] md:text-sm text-xs"
           >
-            <p class="h-6 font-medium">Ijara uylar</p>
+            <p class="md:h-6 h-4 font-medium">Ijara uylar</p>
             <img src="@/assets/svg/blue_x.svg" alt="" />
           </button>
         </li>
@@ -50,7 +50,7 @@
     <section>
       <!-- <Slider /> -->
       <div
-        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-16 gap-5 -mx-[10px] mt-10"
+        class="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 xl:gap-16 gap-5 -mx-[10px] md:mt-10 mt-5"
       >
         <div
          @click="$router.push('/products/' + i)"
