@@ -36,10 +36,16 @@
             Design Studio
           </h1>
           <div class="h-[50px] mt-[120px] space-x-4 font-medium text-white">
-            <button class="px-8 h-full bg-[#027DFC] rounded-[30px]">
+            <button
+              @click="$router.push('/products/1')"
+              class="px-8 h-full bg-[#027DFC] rounded-[30px]"
+            >
               Shop Now
             </button>
-            <button class="border-2 border-white px-8 h-full rounded-[30px]">
+            <button
+              @click="$router.push('/products/1')"
+              class="border-2 border-white px-8 h-full rounded-[30px]"
+            >
               Explore
             </button>
           </div>
